@@ -1,0 +1,119 @@
+.blog {
+    padding: 77px 0 223px 0;
+    position: relative;
+
+    // .blog__container
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    &__bg {
+        position: absolute;
+        bottom: -400px;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+      
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 80%;
+            width: 100%;
+            
+            
+        }
+    }
+}
+
+.container-blog {
+
+    // .container-blog__nav
+
+    &__nav {
+        font-size: 12px;
+        line-height: 24px;
+        text-align: center;
+        color: #6B6B6B;
+        margin-bottom: 28px;
+    }
+
+    // .container-blog__title
+
+    &__title {
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 48px;
+        text-align: center;
+        margin-bottom: 81px;
+    }
+
+    // .container-blog__body
+
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 85px;
+    }
+}
+.body-blog {
+
+    // .body-blog__item
+
+    &__item {
+        position: relative;
+        display: block;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.06) 0%, rgba(0, 0, 0, 0.48) 100%);
+            z-index: 3;
+
+        }
+
+
+
+        img {
+            position: relative;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            z-index: 1;
+
+            
+           
+        }
+
+        p {
+            position: absolute;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 26px;
+            text-align: center;
+            color: #FFFFFF;
+            bottom: 35px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            z-index: 4;
+            width: 60%;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+        }
+        
+    }
+}
