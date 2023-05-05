@@ -6,6 +6,7 @@
 @import "_blog";
 @import "_services";
 @import "_blog-page_1";
+@import "_faq";
 
 
 html {
@@ -31,6 +32,7 @@ body {
     max-width: 1047px;
     margin: 0 auto;
     padding: 0 15px;
+    width: 100%;
 }
 
 
@@ -45,6 +47,22 @@ body {
     font-size: 34px;
     line-height: 34px;
     text-align: center;
+    @media (max-width: 1200px) {
+
+      
+    }
+    
+    @media (max-width: 992px) {
+        font-size: 30px;
+    }
+    
+    @media (max-width: 767px) {
+        font-size: 27px;
+    }
+    
+    @media (max-width: 479px) {
+        font-size: 24px;
+    }
 }
 
 @media (max-width: 1200px) {

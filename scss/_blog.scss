@@ -1,6 +1,15 @@
 .blog {
     padding: 77px 0 223px 0;
     position: relative;
+    flex: 1 1 auto;
+    @media (max-width: 1200px) {
+        padding: 50px 0 147px 0;
+      
+    }
+    @media (max-width: 767px) {
+        padding-bottom: 137px;
+        padding-top: 40px;
+    }
 
     // .blog__container
 
@@ -43,6 +52,12 @@
         text-align: center;
         color: #6B6B6B;
         margin-bottom: 28px;
+        @media (max-width: 1200px) {
+            margin-bottom: 16px;
+        }
+        @media (max-width: 479px) {
+            font-size: 10px;
+        }
     }
 
     // .container-blog__title
@@ -53,6 +68,18 @@
         line-height: 48px;
         text-align: center;
         margin-bottom: 81px;
+        @media (max-width: 1200px) {
+            margin-bottom: 59px;
+            font-size: 38px;
+        }
+        @media (max-width: 767px) {
+            font-size: 30px;
+            margin-bottom: 45px;
+        }
+        @media (max-width: 479px) {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
     }
 
     // .container-blog__body
@@ -62,6 +89,18 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 85px;
+        @media (max-width: 1200px) {
+            gap: 57px;
+        }
+        @media (max-width: 992px) {
+            gap: 30px;
+        }
+
+        @media (max-width: 767px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            gap: 31px;
+        }
     }
 }
 .body-blog {
@@ -113,7 +152,36 @@
                 text-decoration: underline;
             }
 
+            @media (max-width: 992px) {
+                font-size: 20px;
+                width: 80%;
+            }
+            @media (max-width: 767px) {
+                font-size: 18px;
+                width: 55%;
+            }
+            @media (max-width: 479px) {
+                width: 75%;
+            }
+
         }
         
     }
+}
+
+@media (max-width: 1200px) {
+
+      
+}
+
+@media (max-width: 992px) {
+    
+}
+
+@media (max-width: 767px) {
+    
+}
+
+@media (max-width: 479px) {
+    
 }

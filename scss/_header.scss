@@ -8,6 +8,10 @@
         align-items: center;
         
         padding: 35px 0;
+        @media (max-width: 1200px) {
+
+            padding: 20px 0;
+        }
     }
 
     // .header__logo
@@ -26,6 +30,9 @@
         align-items: center;
         justify-content: flex-end;
          margin-right: 48px;
+         @media (max-width: 992px) {
+            margin-right: 10px;
+         }
     }
 
     // .header__button

@@ -1,5 +1,12 @@
 .footer {
     padding-bottom: 80px;
+    @media (max-width: 1200px) {
+        padding-bottom: 60px;
+    }
+
+    @media (max-width: 992px) {
+        padding-bottom: 45px;
+     }
 
     // .footer__container
 
@@ -26,9 +33,11 @@
         line-height: 17px;
         text-align: center;
         color: #959595;
-        
         margin: 0 10px;
         margin-bottom: 67px;
+        @media (max-width: 992px) {
+            margin-bottom: 37px;
+         }
     }
 
     // .footer__nav
