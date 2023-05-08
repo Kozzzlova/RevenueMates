@@ -3,42 +3,40 @@
 
     &__bg1 {
         position: absolute;
-        top: 20%;
+        top: 10%;
         left: 0;
         z-index: -1;
         width: 100%;
-        height: 10%;
-        padding-top: 95%;
+        height: 40%;
       
 
         img {
             position: absolute;
             top: 0;
             left: 0;
-            height: 50%;
+            height: 100%;
             width: 100%;
-            object-fit: cover;           
+                  
             
         }
 
     }
     &__bg2 {
         position: absolute;
-        bottom: 15%;
         left: 0;
         z-index: -1;
         width: 100%;
-        height: 27%;
-        padding-top: 90%;
+        height: 20%;
+        bottom: 15%;
       
 
         img {
             position: absolute;
             top: 0;
             left: 0;
-            height: 80%;
+            height: 100%;
             width: 100%;
-            object-fit: cover;           
+                   
             
         }
 
